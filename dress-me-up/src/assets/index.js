@@ -21,6 +21,8 @@ import PinkTee from './tops/pinkTee.png';
 import PurpleTube from './tops/purpleTube.png';
 import WhiteBlouse from './tops/whiteBlouse.png';
 import WhiteTee from './tops/whiteTee.png';
+import PurpleOffShoulder from './tops/purpleOffShoulder.png';
+import RedOffShoulder from './tops/redOffShoulder.png';
 
 //import bottoms
 import BaseBottom from './bottoms/baseBottoms.png';
@@ -68,6 +70,8 @@ export {
     PurpleTube,
     WhiteBlouse,
     WhiteTee,
+    PurpleOffShoulder,
+    RedOffShoulder,
     //bottoms
     BaseBottom,
     BlackSkirt,

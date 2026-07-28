@@ -1,12 +1,42 @@
+/* the stage is the positioning context for every clothing layer */
+.preview-stage {
+  position: relative;
+  width: clamp(240px, 32vw, 384px);
+  flex: none;
+}
 
 .preview {
   position: absolute;
-  top: 10%;
-  right:10%;
-  width: 384px;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: auto; /* keep correct aspect ratio */
+  pointer-events: none;
 }
 
-.necklace {
-  z-index: 5; /* necklace on top */
+/* the base body stays in normal flow so it gives the stage its height;
+   every other layer is absolutely positioned on top of it */
+.preview.base {
+  position: relative;
+}
+
+/* stacking order of the layers (low to high) */
+
+.preview.stockings {
+  z-index: 1;
+}
+.preview.shoes {
+  z-index: 2;
+}
+.preview.bottoms {
+  z-index: 3;
+}
+.preview.tops {
+  z-index: 4;
+}
+.preview.overwear {
+  z-index: 5;
+}
+.preview.necklace {
+  z-index: 6;
 }
